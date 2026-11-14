@@ -1,5 +1,12 @@
 # WebApp
 
+Updating the Live Web Application: 
+1. npm run build
+2. aws s3 sync dist/web-app/browser/ s3://jon-delemos-bucket --delete
+
+
+
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.30.
 
 ## Development server
