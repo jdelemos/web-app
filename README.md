@@ -1,5 +1,9 @@
 # WebApp
 
+Live Site:
+
+http://jon-delemos-bucket.s3-website.us-east-2.amazonaws.com/
+
 Updating the Live Web Application: 
 1. npm run build
 2. aws s3 sync dist/web-app/browser/ s3://jon-delemos-bucket --delete
