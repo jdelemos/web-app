@@ -1,0 +1,22 @@
+<!-- nav-rail.component.html -->
+<aside class="nav-rail" [class.expanded]="isExpanded()">
+  <button class="toggle-btn" (click)="toggleRail()" aria-label="Toggle navigation">
+    ☰
+  </button>
+
+  <nav class="nav-list">
+    @for (item of navItems; track item.route) {
+      <a 
+        class="nav-item" 
+        [routerLink]="item.route" 
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [title]="!isExpanded() ? item.label : ''">
+        <span class="icon">{{ item.icon }}</span>
+        @if (isExpanded()) {
+          <span class="label">{{ item.label }}</span>
+        }
+      </a>
+    }
+  </nav>
+</aside>
