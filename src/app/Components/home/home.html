@@ -3,9 +3,12 @@
 
 
 
+<!-- Home component template 
+You have to use a square bracket to bind a variable for a video in iframe here.  
 
+-->
 <h1 class="headProjects">Welcome to My Blog</h1>
-<p>A bit about my journey in web development.</p>
+<p>A bit about my journey in web development. Zero AI used during the development process.</p>
 <br><iframe class="video" width="720" height="420" src="https://www.youtube.com/embed/Rkc09sTiS7g?si=x1LOS_k6QvL5d3uS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
 <iframe class="video" width="720" height="420" src="https://www.youtube.com/embed/g34SYgKbqFY?si=m4CxTZH2kyncnEae" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <iframe class="video" width="720" height="420" src="https://www.youtube.com/embed/M624T3PTggU?si=AdponSBFZRod6nBm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -13,5 +16,13 @@
 <iframe class="video2" width="850" height="465" src="https://www.youtube.com/embed/2W0nVisWla4?si=0LKqg0XOYFN9XG2d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <iframe class="video2" width="850" height="465" src="https://www.youtube.com/embed/9WjPJQYoT8I?si=aPl8hfJGXf6Fxx8x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <img class="video2" src="e.jpg" alt="Another Welcome Image">
-<img class="video2" src="k.jpg" alt="Yet Another Welcome Image">
-<iframe class="video2" width="970" height="520" src="https://www.youtube.com/embed/VKnNUYknsuQ?si=gbSR_O1NaakO3Lbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video2" width="720" height="520" src="https://www.youtube.com/embed/PsRexM78_Vk?si=KwJu62AWvIy9e0OC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video2" width="720" height="520" src="https://www.youtube.com/embed/VKnNUYknsuQ?si=gbSR_O1NaakO3Lbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br> 
+<!-- Button to show message, just working on building random stuff -->
+<button class = "btn" (click) = "showMessage()"> Click me</button>
+<!-- Two way binding example -->
+ <p> Two way binding example </p>
+<p>Enter your name:</p> <input type = "text" [(ngModel)] = "message">
+Your name is: {{ message }}
+

@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import {RouterLink, RouterOutlet} from '@angular/router';
 
+
+// New component for handling routing with RouterLink and RouterOutlet
+// decorators always start with @ symbol in Angular
 @Component({
   selector: 'app-new-comp',
   imports: [CommonModule, RouterModule, RouterLink, RouterOutlet],
@@ -12,4 +15,13 @@ import {RouterLink, RouterOutlet} from '@angular/router';
 export class NewComp {
  router = RouterLink;
   outlet = RouterOutlet;
+
+
+  //simple data binding example
+  data = "Hello, this is new component data"; 
+  //simple object for user information
+  user = {
+    name: 'Jon',
+    email: 'example@example.com'
+  }
 }
