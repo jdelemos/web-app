@@ -36,8 +36,9 @@ export class Home {
     this.showMessageFlag = true;
   }
 
-
-
+  hide(): void {
+    this.showMessageFlag = false;
+  }
 }
 
 
