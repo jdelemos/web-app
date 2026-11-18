@@ -1,3 +1,6 @@
+
+
+
 <h1 class="headProjects"><a routerLink="/">Projects Home</a></h1>
 <p>This is a google search engine I built for one of my projects as a masters student.</p>
 <p>This project demonstrates my skills in web development and search engine implementation.</p>
@@ -7,8 +10,30 @@
 <br>
 <p class="description">The image below shows the machine learning model I trained to target enemies and attack on recognition.</p>
 <img src = "/training_1.jpeg" alt="Training 1">
-<p>{{data}}</p>
-<p>{{user.name}} - {{user.email}}</p>
+
 <p>Changing the future of the interview.</p>
+<!-- Remember () means event binding. This triggers a function in the component -->
 <button (click)="toggle()">Toggle Interview Status</button>
-<p>{{interviewStatus}}</p>
+    @if (interviewStatus) {
+        <p class="success">Success</p>
+    } @else {
+        <p class="failure">Failure</p>
+    }
+
+    @if (element) {
+     {{slop}}
+    }
+    @else {
+        "Goodbye";
+    }
+    <br>
+    <br> Languages I work with on a daily basis:
+    <!--=for loop to display languages, practicing-->
+
+    <!-- No change in the outcome between these two different approaches -->
+
+    <!-- <li *ngFor="let lang of languages">{{lang}}</li> -->
+     @for (language of languages; track language) {
+        <li
+        >{{ language}}</li>
+     }

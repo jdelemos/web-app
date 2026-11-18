@@ -17,8 +17,11 @@ export class NewComp {
   outlet = RouterOutlet;
 
   //boolean flag for conditional rendering
-  interviewStatus: String = "Happy Interview";
+  interviewStatus: boolean = false;
   interviewStatus2: String = "Sad Interview";
+  element : boolean = true;
+  slop :String = "if you are a sloper, you are a sloper"
+  languages = ["C#","TypeScript", "Angular", "PSQL", "SCSS"];
   
   //simple data binding example
   data = "Hello, this is new component data"; 
@@ -30,11 +33,7 @@ export class NewComp {
   truthValue: boolean = true;
   //simple function for toggling the boolean flag
   toggle() {
-    this.truthValue = !this.truthValue;
-    if (this.truthValue) {
-      this.interviewStatus = "Happy Interview";
-    } else {
-      this.interviewStatus = "Sad Interview";
-    }
+    //flipping the flag. This actually works pretty well
+    this.interviewStatus = !this.interviewStatus;
   }
 }
