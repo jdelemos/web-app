@@ -20,9 +20,11 @@ You have to use a square bracket to bind a variable for a video in iframe here.
 <iframe class="video2" width="720" height="520" src="https://www.youtube.com/embed/VKnNUYknsuQ?si=gbSR_O1NaakO3Lbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br> 
 <!-- Button to show message, just working on building random stuff -->
-<button class = "btn" (click) = "showMessage()"> Click me</button>
-<!-- Two way binding example -->
- <p> Two way binding example </p>
-<p>Enter your name:</p> <input type = "text" [(ngModel)] = "message">
-Your name is: {{ message }}
+<button class = "btn" (click) = "showMessage()"> Stupid Default JS Message</button>
+<p>Basic update function that utilizes data binding, functions, and boolean operators. Learning functions in Angular. </p> <!-- -->
+<p>Enter your name:</p> <input type = "text" #nameBox><br>
+<br><button (click)="updateName(nameBox.value)">Show Message</button>
 
+@if (showMessageFlag) {
+    <p> {{ this.message }} </p>
+}   

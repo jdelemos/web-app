@@ -16,6 +16,10 @@ export class Home {
 
   router = RouterLink;
   outlet = RouterOutlet;
+
+  showMessageFlag: boolean = false;
+  message: string = '';
+  displayName: string = '';
  
   routerLink = '/new-comp/new-comp';
   //video link for embedding in the template
@@ -26,9 +30,11 @@ export class Home {
   showMessage(): void {
     alert('Button clicked!');
   }
-
-  // two way binding example
-  message : string = 'Happy'; 
+  
+  updateName(name: string): void {
+    this.message = name;
+    this.showMessageFlag = true;
+  }
 
 
 
