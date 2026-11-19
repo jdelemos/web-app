@@ -17,5 +17,12 @@
 <iframe class="video" width="720" height="420" src="https://www.youtube.com/embed/0aGD8ulcTUY?si=UI2YzSL45Och8LAR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <iframe class="video" width="720" height="420" src="https://www.youtube.com/embed/TMSlTQmDLx4?si=qBVo6m6LDQFPd86g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <iframe class="video" width="720" height="420" src="https://www.youtube.com/embed/qTsaS1Tm-Ic?si=EY8BLuSStNyeJqaC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<button (click)="toggleInterviewStatus()" [ngClass]="{'active': interviewStatus, 'inactive': !interviewStatus}"> Toggle Interview Status</button>
+@if (interviewStatus) {
+  <p class="success">Success</p>
+} @else {
+  <p class="failure">Failure</p>
+}
 
 

@@ -10,5 +10,10 @@ import { CommonModule } from '@angular/common';
 export class Sec {
 
   // later we will add more functionality here as needed
+  interviewStatus: boolean = false;
+
+  toggleInterviewStatus() {
+    this.interviewStatus = !this.interviewStatus;
+  }
   
 }
