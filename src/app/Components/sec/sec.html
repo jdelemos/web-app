@@ -24,5 +24,24 @@
 } @else {
   <p class="failure">Failure</p>
 }
+<div>
+    <br>
+    <button (click)="toggleModNum()">Toggle Career Status</button>
 
+    <!-- Career Status Switch! Switch using angular, so useful -->
+    @switch(modNum) {
+
+        @case(0) {
+            <p>{{ careerStatus1 }}</p>
+        <br>
+        }
+        @case(1) {
+            <p>{{ careerStatus2 }}</p>
+        }
+        @case(2) {
+            <p>{{ careerStatus3 }}</p>
+        <br>
+        }
+    }
+</div>
 
