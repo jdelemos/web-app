@@ -43,5 +43,20 @@
         <br>
         }
     }
+    <!-- here we are going to practice using pipes-->
+    <P>Original Text:</P>
+    <p>{{ text }}</p>
+    <P>Uppercase Text:</P>
+    <p>{{ text | uppercase }} </p>
+    <P>Lowercase Text:</P>
+    <p>{{ text | lowercase }} </p>
+    <P>Titlecase Text:</P>
+    <p>{{ text | titlecase }} </p>  
+    <P>Slice Text (first 5 characters):</P>
+    <p>{{ text | slice:0:5 }} </p>
+    <P>Number of Characters:</P>
+    <p>{{ text.length }} </p>
+    <P>Number of Words:</P>
+    <p>{{ text.split(' ').length }} </p>
 </div>
 

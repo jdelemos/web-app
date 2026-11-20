@@ -16,6 +16,7 @@ export class Sec {
   careerStatus3: string = "Senior Developer";
   modNum = 0; 
   careerStatusDefault: string = "Learning for next position";
+  text: string = "Interview happy";
 
   toggleInterviewStatus() {
     this.interviewStatus = !this.interviewStatus;
