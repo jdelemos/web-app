@@ -23,9 +23,9 @@ You have to use a square bracket to bind a variable for a video in iframe here.
 <button class = "btn" (click) = "showMessage()"> Stupid Default JS Message</button>
 <p>Basic update function that utilizes data binding, functions, and boolean operators. Learning functions in Angular. </p> <!-- -->
 <p>Enter your name:</p> <input type = "text" #nameBox><br>
-<br><button (click)="updateName(nameBox.value)">Show Message</button>
+<br><button (click)="updateName(nameBox.value)">Show Name</button>
 
 @if (showMessageFlag) {
     <p> {{ this.message }} </p>
 }
-<button (click)="hide()"> Hide Message </button>
+<button (click)="hide()"> Hide Name </button>

@@ -6,7 +6,7 @@ import { NavRail } from './Components/layout/nav-rail/nav-rail';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, NavRail],
+  imports: [RouterOutlet, NavRail],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

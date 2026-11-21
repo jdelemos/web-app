@@ -21,7 +21,9 @@ export class NavRail {
   navItems: NavItem[] = [
     { label: 'Home', icon: '🏠', route: '/' },
     { label: 'Projects', icon: '📁', route: '/new-comp/new-comp' },
-    { label: 'Music', icon: '🎵', route: '/sec' }
+    { label: 'Music', icon: '🎵', route: '/sec' },
+    { label: 'Parent', icon: '👤', route: '/parent' },
+    { label: 'Child', icon: '👶', route: '/child' }
   ];
  
 

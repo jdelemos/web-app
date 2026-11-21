@@ -8,7 +8,7 @@ import {RouterLink, RouterOutlet} from '@angular/router';
 // decorators always start with @ symbol in Angular
 @Component({
   selector: 'app-new-comp',
-  imports: [CommonModule, RouterModule, RouterLink, RouterOutlet],
+  imports: [CommonModule, RouterModule],
   templateUrl: './new-comp.html',
   styleUrls: ['./new-comp.scss'],
 })
